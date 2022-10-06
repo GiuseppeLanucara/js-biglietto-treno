@@ -31,8 +31,9 @@ console.log(bigliettoBase, typeof(bigliettoBase));
 
 //costo biglietto km
 
-const bigliettoKm = parseInt (bigliettoBase + numeroKm);
+const bigliettoKm = (bigliettoBase * numeroKm);
 console.log(bigliettoKm, typeof (bigliettoKm));
 
-//applicare sconto 
-if (etaPass <= 18 (bigliettoKm )   
+//SE il passeggero ha meno di 18 anni si applicherà uno sconto del 20% altrimenti se ha più di 65 anni si applicherà uno sconto del 40%.
+
+if (etaPass <= 18 )
