@@ -38,7 +38,6 @@ console.log(bigliettoKm, typeof (bigliettoKm));
 
 if (etaPass <= 18 ) {
     bigliettoKm * 20 / 100 
-} else {
-    etaPass >65 
+} else if (etaPass >65) {
         bigliettoKm * 40 / 100
     }
