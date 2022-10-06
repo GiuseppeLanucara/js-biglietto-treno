@@ -19,10 +19,20 @@
 //prezzo finale 
 
 // Chiedere dati di kilomteri e età
-
 const numeroKm = parseInt (prompt("Quanti km deve fare?"));
 console.log(numeroKm, typeof(numeroKm));
 
 const etaPass = parseInt (prompt("Che età ha?"));
 console.log(etaPass, typeof(etaPass) );
 
+//costo biglietto base 0,21 al km
+const bigliettoBase = 0.21;
+console.log(bigliettoBase, typeof(bigliettoBase));
+
+//costo biglietto km
+
+const bigliettoKm = parseInt (bigliettoBase + numeroKm);
+console.log(bigliettoKm, typeof (bigliettoKm));
+
+//applicare sconto 
+if (etaPass <= 18 (bigliettoKm )   
