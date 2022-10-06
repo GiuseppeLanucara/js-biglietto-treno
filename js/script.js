@@ -36,6 +36,7 @@ console.log(bigliettoKm, typeof (bigliettoKm));
 
 //SE il passeggero ha meno di 18 anni si applicherà uno sconto del 20% altrimenti se ha più di 65 anni si applicherà uno sconto del 40%.
 
+const BigliettoScontato = 
 if (etaPass <= 18 ) {
     bigliettoKm * 20 / 100 
 } else if (etaPass >65) {
