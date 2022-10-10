@@ -40,7 +40,7 @@ if (etaPass < 18 ) {
 } else if (etaPass > 65) {
     bigliettoScontato = bigliettoKm * 40 / 100;
     }
-    console.log($bigliettoScontato, typeof(bigliettoScontato));
+    console.log(bigliettoScontato, typeof(bigliettoScontato));
 
 //output costo del biglietto con sconto applicato se meno di 18 o più di 65 anni  
-document.getElementById("out").innerHTML= `<span>Il costo del suo biglietto è</span> ${$bigliettoScontato} ${"<span>euro</span>"}`;
+document.getElementById("out").innerHTML= `<span>Il costo del suo biglietto è</span> ${bigliettoScontato} ${"<span>euro</span>"}`;
