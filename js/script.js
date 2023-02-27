@@ -11,8 +11,8 @@
 
 
 //dati: 0,21 al km prezzo base 
-    // < 18 anni sconto 20% 
-    //> 65 anni sconto 40%
+// < 18 anni sconto 20% 
+//> 65 anni sconto 40%
 
 
 // output: 
@@ -49,10 +49,12 @@
 
 
 //chidere all'utente numero di km e età 
+
 const numeroKm = parseInt(prompt("Salve, quanti km vuole percorrere?"));
 
+
 const etaPasseggero = parseInt(prompt("Mi può dire la sua età?"));
-console.log(numeroKm, etaPasseggero, typeof(numeroKm, etaPasseggero));
+console.log(numeroKm, etaPasseggero, typeof (numeroKm, etaPasseggero));
 
 //prezzo base del biglietto
 const prezzoBase = 0.21 * numeroKm
@@ -65,16 +67,16 @@ let bigliettoScontato = prezzoBase;
 if (etaPasseggero < 18) {
     bigliettoScontato = prezzoBase * 20 / 100;
     console.log(bigliettoScontato);
-    
+
     //ALTRIMENTI SE ha più di 65 anni si applica uno sconto del 40%    
 } else if (etaPasseggero > 65) {
-    bigliettoScontato = prezzoBase * 40 / 100; 
+    bigliettoScontato = prezzoBase * 40 / 100;
     console.log(bigliettoScontato);
 }
 
 //OUTPUT valore del biglietto scontato in html
 
-document.getElementById("out").innerHTML =  "Il suo biglietto costa" + ` ${bigliettoScontato.toFixed(2)}` + "euro";
+document.getElementById("out").innerHTML = "Il suo biglietto costa" + ` ${bigliettoScontato.toFixed(2)}` + " " + "euro";
 
 
 
